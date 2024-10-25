@@ -1,0 +1,66 @@
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #4CC9FE;
+    color: white;
+  }
+  
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  /* Hamburger icon */
+  .navbar-hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .navbar-hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Mobile view */
+  @media (max-width: 768px) {
+    .navbar-links {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 200px;
+      background-color: #333;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 100px;
+      transform: translateX(100%);
+    }
+  
+    .navbar-links.open {
+      transform: translateX(0);
+    }
+  
+    .navbar-hamburger {
+      display: flex;
+    }
+  }
+  
