@@ -12,7 +12,7 @@ const NavbarCompo = () => {
     <nav className="navbar">
       <div className="navbar-logo">My App</div>
       <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
-        <Link href="#home">Home</Link>
+        <Link href="/">Home</Link>
         <Link href="#About">About</Link>
         <Link href="#Services">Services</Link>
         <Link href="#home">Todo app</Link>

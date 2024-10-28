@@ -17,8 +17,6 @@ function App() {
         <Route index element = {<Home/>} />
     
         
-        
-        
         </Route>
 
       </Route>
